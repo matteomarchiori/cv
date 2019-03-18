@@ -1,46 +1,162 @@
-\documentclass[11pt,a4paper,sans]{moderncv}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[italian]{babel}
-\moderncvstyle{classic}
-\moderncvcolor{blue}
-\usepackage[scale=0.8]{geometry}
-\firstname{Matteo}
-\familyname{Marchiori}
-\title{Curriculum}
-\address{via Campolino 35, Vigonza (PD)}{CAP 35010}
-\mobile{+39 347 3818358}
-\email{matteo.marchiori97@gmail.com}
-%\photo[64pt][0.4pt]{LP}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper]{twentysecondcv} % a4paper for A4
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{} % Profile picture
+
+\cvname{Matteo Marchiori} % Your name
+\cvjobtitle{Sviluppatore di software} % Job title/career
+
+\cvdate{16 Gennaio 1997} % Date of birth
+\cvaddress{Via Campolino 35, Vigonza(PD)\newline Italia} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+39 347 381 83 58} % Phone number
+\cvsite{} % Personal website
+\cvmail{matteo.marchiori97@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
 \begin{document}
-    \makecvtitle
-    \section{Dati anagrafici}
-        \cvitem{Nascita}{Padova, 16 gennaio 1997}
-    \section{Titoli di studio}
-        \cventry{2016-in corso}{Laurea in Informatica}%
-                {Università degli Studi}{Padova}%
-                {votazione 110/110 e lode}{}
-        \cventry{2016}{Diploma di tecnico informatico}%
-                {Itis ``Francesco Severi''}{Padova}%
-                {votazione 98/100}{}
-%\section{Abilitazioni}
-%\cvlistitem{Abilitazione all'insegnamento della Matematica}
-%\cvlistitem{Abilitazione all'insegnamento della Fisica}
-    \section{Esperienze lavorative}
-        \cventry{2016--attuale}{Web developer}%
-                {D.M SRL}{Noventa Padovana (PD)}{}{}
-        \cventry{2018--2018}{Web developer}%
-                {Gruppo Fondiario Italia}{}{}{}
-        \cventry{2018--2018}{Software developer}%
-                {Warda SRL}{Torre (PD)}{}{}
-    \section{Lingue}
-        \cvitem{Italiano}{Madrelingua}
-        \cvitem{Inglese}{Livello C1, affinato con soggiorni a Dublino}
-    \section{Conoscenze informatiche}
-%\cvdoubleitem{Programmi}{}{Linguaggi}{}
-%\section{Collaborazioni}
-%\cvlistitem{Membro del Gruppo Utilizzatori Italiani di \TeX{} e \LaTeX}
-%\section{Pubblicazioni}
-%\cvlistitem{L’arte di scrivere con \LaTeX, 2017.}
-%\cvlistitem{Matematica per Istituti professionali, 2016.}
-\end{document}
+
+%----------------------------------------------------------------------------------------
+%	 ABOUT ME
+%----------------------------------------------------------------------------------------
+
+\aboutme{Sviluppatore software / Analista} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\skills{{Altro (Python2.7, Python3, Scrapy)/5},{Office (Microsoft Office, LibreOffice)/6},{Windows \& Linux/6},{LaTeX/3},{Android (Android Studio)/4},{OOP (Java, C++)/5},{Linux server (Apache2, Postfix, Dovecot)/5},{CI/CD (Git, Maven, JUnit, TravisCI)}/5.5,{Database (MySQL, MongoDB, XML, JSON)/5.5}, {Ecommerce (Opencart, Woocommerce)/5.5}, {Frontend framework (Bootstrap, JQuery)/5.5}, {Web development (PHP, JS, CSS, HTML)/6}}
+
+%------------------------------------------------
+
+% Skill text section, each skill must have a value between 0 an 6
+\skillstext{}
+
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Esperienza Professionale}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{10/2016}{Sviluppatore Web}{D.M SRL}{Sviluppo di siti Web, Ecommerce, dem, gestione server su AWS (Ubuntu per Web ed email)}
+	\twentyitem{02 - 04/2018}{Sviluppo di Scraper Web}{Warda SRL}{Sviluppo di scraper in Pyhton tramite Scrapy, Scrapy splash, Crawlera}
+	\twentyitem{06 - 10/2018}{Sviluppo Web application}{Gruppo Fondiario Italia SRL}{Sviluppo di un'applicazione per il calcolo dell'efficienza energetica di abitazioni}
+	\twentyitem{07 - 08/2015}{Sviluppo applicazione Java standalone}{Infocamere SRL}{Stage: sviluppo di un'applicazione per il calcolo dell'efficienza energetica dell'edificio di Infocamere}
+	\twentyitem{06 - 07/2015}{Formattazione pc}{NED School of English}{Stage: formattazione di pc in una scuola di inglese a Dublino}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+\section{Istruzione e Formazione}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{since 1865}{Ph.D. {\normalfont candidate in Computer Science}}{Wonderland}{\emph{A Quantified Theory of Social Cohesion.}}
+	\twentyitem{1863-1865}{M.Sc. magna cum laude}{Wonderland}{Majoring in Computer Science}
+	\twentyitem{1861-1863}{B.Sc. magna cum laude}{Wonderland}{Majoring in Computer Science}
+	\twentyitem{1856-1861}{High school}{Wonderland}{Specializing in mathematics and physics.}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+%\section{Publications}
+
+%\begin{twentyshort} % Environment for a short list with no descriptions
+%	\twentyitemshort{1865}{Chapter One, Down the Rabbit Hole.}
+%	\twentyitemshort{1865}{Chapter Two, The Pool of Tears.}
+%	\twentyitemshort{1865}{Chapter Three,  The Caucus Race and a Long Tale.}
+%	\twentyitemshort{1865}{Chapter Four,  The Rabbit Sends a Little Bill.}
+%	\twentyitemshort{1865}{Chapter Five,  Advice from a Caterpillar.}
+	%\twentyitemshort{<dates>}{<title/description>}
+%\end{twentyshort}
+
+%----------------------------------------------------------------------------------------
+%	 AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\begin{twentyshort} % Environment for a short list with no descriptions
+	\twentyitemshort{1987}{All-Time Best Fantasy Novel.}
+	\twentyitemshort{1998}{All-Time Best Fantasy Novel before 1990.}
+	%\twentyitemshort{<dates>}{<title/description>}
+\end{twentyshort}
+
+%----------------------------------------------------------------------------------------
+%	 INTERESTS
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+The heroine and the dreamer of Wonderland; Alice is the principal character.
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	 OTHER INFORMATION
+%----------------------------------------------------------------------------------------
+
+\section{Su di me}
+
+Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%----------------------------------------------------------------------------------------
+%	 SECOND PAGE EXAMPLE
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\makeprofile % Print the sidebar
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
+
